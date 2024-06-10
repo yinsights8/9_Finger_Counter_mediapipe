@@ -1,4 +1,4 @@
-"# 9_Finger_Counter_mediapipe" 
+# 9_Finger_Counter_mediapipe
 
 This project is created as a fun activity, i build this project with the help of mediapipe. This project counts the finger 0 - 5. while creating this project i've learned more about mediapipe and how can we utilize mediapipe to build some amazing projects, and this project was just a thought.
 
