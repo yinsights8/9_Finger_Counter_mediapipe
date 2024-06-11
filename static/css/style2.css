@@ -70,3 +70,16 @@ form #upload-button{
   width: 70%; */
 }
 
+.card-text{
+  cursor: pointer;
+}
+
+.card-text .read_more{
+  text-decoration: none;
+  display: none;
+}
+
+.card-text .read-btn{
+  text-decoration: none;
+  display: block;
+}

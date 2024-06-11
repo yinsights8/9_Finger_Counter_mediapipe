@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/static/css/style2.css"> 
     <link rel="stylesheet" href="/static/css/cvstyle.css">
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- for icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />       
@@ -240,12 +241,14 @@
                     <h5 class="card-title">Personal protective equipment Detection</h5>
                     <p class="card-text">
                         The Personal Protective Equipment (PPE) Project leverages the advanced capabilities of the YOLOv8 
-                        (You Only Look Once, version 8)<span id="dots">...</span><span id="more" style="display: none;"> model to enhance workplace safety by detecting and ensuring the proper 
-                        use of personal protective equipment. This project aims to automate the process of monitoring and 
-                        verifying PPE compliance in real-time, providing a robust solution for industries where safety is paramount.
-                      </span>
-                      <a class="fw-bold" onclick="myFunction()" id="myBtn">Read more</a>
-
+                        (You Only Look Once, version 8)
+                        <span class="dots">...</span>
+                        <span class="read_more">
+                          model to enhance workplace safety by detecting and ensuring the proper
+                          use of personal protective equipment. This project aims to automate the process of monitoring and
+                          verifying PPE compliance in real-time, providing a robust solution for industries where safety is paramount.
+                        </span>
+                      <a class="fw-bold read-btn" onclick="myFunction()">Read More</a>
                     </p>
                     <a href="PersonalProtectiveEquipment" class="btn btn-primary">Get Started</a>
                   </div>
@@ -260,12 +263,15 @@
                   <div class="card-body">
                     <h5 class="card-title">Hand Gesture Volume Controler</h5>
                     <p class="card-text">
-                        The Personal Protective Equipment (PPE) Project leverages the advanced capabilities of the YOLOv8
-                        (You Only Look Once, version 8)<span id="dots">...</span><span id="more" style="display: none;"> model to enhance workplace safety by detecting and ensuring the proper
-                        use of personal protective equipment. This project aims to automate the process of monitoring and
-                        verifying PPE compliance in real-time, providing a robust solution for industries where safety is paramount.
+                        Hand gesture volume control is a project, this project is made as a fun during this project i have learn a
+                      <span class="dots">...</span>
+                      <span class="read_more">
+                        lot about mediaPipe and how can it be use in real
+                        time, this project let's your to control the volume of the
+                        system by your hand gestures. this project utilizes mediapipe for hand gesture, and pycaw, comtypes to get
+                        the volumn of values of the system.
                       </span>
-                      <a class="fw-bold" onclick="myFunction()" id="myBtn">Read more</a>
+                      <a class="fw-bold read-btn" onclick="myFunction()">Read More</a>
 
                     </p>
                     <a href="handDetector" class="btn btn-primary">Get Started</a>
@@ -281,31 +287,49 @@
                   <div class="card-body">
                     <h5 class="card-title">Finger Counter</h5>
                     <p class="card-text">
-                        The Personal Protective Equipment (PPE) Project leverages the advanced capabilities of the YOLOv8
-                        (You Only Look Once, version 8)<span id="dots">...</span><span id="more" style="display: none;"> model to enhance workplace safety by detecting and ensuring the proper
-                        use of personal protective equipment. This project aims to automate the process of monitoring and
-                        verifying PPE compliance in real-time, providing a robust solution for industries where safety is paramount.
+                        This project is created as a fun activity, i build this project with the help of mediapipe.
+                        This project counts the finger 0 - 5.
+                      <span class="dots">...</span>
+                      <span class="read_more">
+                        while creating this project i've learned more about mediapipe
+                        and how can we utilize mediapipe to build some amazing projects, and this project was just a thought.
                       </span>
-                      <a class="fw-bold" onclick="myFunction()" id="myBtn">Read more</a>
-
+                      <a class="fw-bold read-btn" onclick="myFunction()">Read More</a>
                     </p>
                     <a href="fingerCounter" class="btn btn-primary">Get Started</a>
                   </div>
                 </div>
               </div>
-              
+
               <!-- cards 5 -->
 
-  
+
             </div>
           </div>
         </div>
-      </main>
+    </main>
       
     <!-- main Content -->
 
 
-    <script src="/static/js/projectDiscription.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".read-btn").click(function(){
+          $(this).prev().toggle();
+          $(this).siblings('.dots').toggle();
+
+          if ($(this).text()=='Read More'){
+            $(this).text('Read Less');
+          }else{
+            $(this).text('Read More');
+          }
+
+        });
+
+      });
+    </script>
+
+<!--    <script src="/static/js/projectDiscription.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
